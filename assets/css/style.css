@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+body {
+}
+
+.navFlex {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 0;
+  align-items: center;
+  max-width: 60%;
+  margin-inline: auto;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+
+  align-items: center;
+}
+
+p a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+}
+
+button {
+  background-color: rgba(25, 25, 25, 1);
+  color: white;
+  border-radius: 100px;
+  padding: 8px 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(25, 25, 25, 1);
+  cursor: pointer;
+}
+
+.belowNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.itemsbelowNav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  font-size: 106px;
+}
+
+.itemsbelowNav h3 {
+  font-size: 24px;
+}
+
+.belowNavButton button {
+  padding: 8px 20px;
+  font-size: 20px;
+  width: 213px;
+}
+
+.containerNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Assicurati che la navbar sia sopra gli altri contenuti */
+}
+
+article {
+  max-width: 60%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.trending {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #242424;
+  line-height: 20px;
+  font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.card {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.profilo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fotoprofilo {
+  gap: 1rem;
+  display: flex;
+}
+
+.picture1 img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.numero p {
+  font-size: 32px;
+  color: lightgrey;
+  font-weight: 900;
+}
+
+.autore {
+  font-size: 13px;
+  font-weight: 900;
+  padding-top: 0.3rem;
+}
+
+p.articolo {
+  font-weight: 900;
+}
+
+.data {
+  color: lightgrey;
+  font-size: 13px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card {
+  width: 30%;
+}
+
+.picture2 img {
+  width: 25px;
+  border-radius: 25%;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
