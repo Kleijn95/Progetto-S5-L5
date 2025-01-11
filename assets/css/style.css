@@ -61,7 +61,6 @@ button {
   align-items: flex-start;
   max-width: 60%;
   margin-inline: auto;
-  margin-top: 2rem;
 }
 
 .itemsbelowNav {
@@ -92,9 +91,13 @@ h2 {
 }
 
 article {
+  margin-top: 2rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.container {
   max-width: 60%;
   margin-inline: auto;
-  margin-top: 2rem;
 }
 
 .trending {
@@ -143,8 +146,8 @@ article {
 
 .autore {
   font-size: 13px;
-  font-weight: 900;
-  padding-top: 0.3rem;
+  font-weight: 500;
+  padding-top: 0.4rem;
 }
 
 p.articolo {
@@ -152,7 +155,7 @@ p.articolo {
 }
 
 .data {
-  color: lightgrey;
+  color: grey;
   font-size: 13px;
 }
 
@@ -176,4 +179,54 @@ p.articolo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+aside {
+  margin-top: 3rem;
+}
+
+.card2 {
+  margin-bottom: 2rem;
+}
+.sottoArticolo {
+  color: grey;
+}
+
+.data2 span {
+  border-radius: 100px;
+  border: solid 1px;
+  background-color: lightgrey;
+  padding: 2px 8px;
+}
+
+.sottodescription {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profilo2 {
+  flex-basis: 40%;
+}
+.data2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.data2 {
+  color: grey;
+  font-size: 13px;
+}
+
+.imgAside img {
+  object-fit: cover;
+  height: auto;
+  width: 200px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
 }
