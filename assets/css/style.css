@@ -43,8 +43,15 @@ p a {
   color: black;
   font-family: "Roboto";
 }
-
-button {
+#navbar {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+.hidden {
+  opacity: 0;
+}
+.containerNav button,
+.belowNav button {
   background-color: rgba(25, 25, 25, 1);
   color: white;
   border-radius: 100px;
@@ -181,10 +188,9 @@ p.articolo {
   gap: 0.5rem;
 }
 
-aside {
-  margin-top: 3rem;
+.profilo2 {
+  width: 100%;
 }
-
 .card2 {
   margin-bottom: 2rem;
 }
@@ -200,14 +206,13 @@ aside {
 }
 
 .sottodescription {
+  justify-content: space-between;
   display: flex;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
-.profilo2 {
-  flex-basis: 40%;
-}
 .data2 {
   display: flex;
   align-items: center;
@@ -229,4 +234,52 @@ aside {
 #nav {
   display: flex;
   align-items: center;
+}
+
+.buttonFooter {
+  border: 1px solid #f2f2f2;
+  background-color: white;
+  color: #6b6b6b;
+  border-radius: none;
+}
+
+.asideFooter {
+  display: flex;
+  padding-top: 3rem;
+  padding-inline: 18%;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+footer {
+  width: 60%;
+}
+
+.footerButtons {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  border-bottom: 1px solid lightgrey;
+  gap: 0.5rem;
+}
+
+footer button {
+  padding: 8px 16px;
+  background-color: white;
+  color: #6b6b6b;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
