@@ -306,7 +306,9 @@ a {
     margin-inline: unset;
     justify-content: flex-start;
   }
-
+  .navLinks {
+    gap: 1rem;
+  }
   .logo {
     padding-left: 2rem;
   }
@@ -370,7 +372,8 @@ a {
   }
 
   .navFlex {
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .belowNav {
     max-width: 100%;
@@ -401,6 +404,9 @@ a {
     width: 15px;
   }
 
+  .logo img {
+    width: 140px;
+  }
   .profilo2 {
     max-width: 45%;
   }

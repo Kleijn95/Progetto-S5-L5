@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let svg = document.querySelector("svg");
 
-let gruppiOpachi = [...svg.querySelectorAll("g[opacity]")];
+let gruppiOpachi = [...svg.querySelectorAll("g[opacity]:not(g[aria-label])")];
 
 function cambiaOpacitàCasuale() {
   let indiceCasuale = Math.floor(Math.random() * gruppiOpachi.length);
@@ -37,4 +37,4 @@ function cambiaOpacitàCasuale() {
   }
 }
 
-setInterval(cambiaOpacitàCasuale, 100);
+setInterval(cambiaOpacitàCasuale, 60);
