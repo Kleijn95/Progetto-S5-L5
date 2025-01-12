@@ -24,10 +24,10 @@ body {
 .navFlex {
   display: flex;
   justify-content: space-between;
-
+  gap: 1rem;
   padding: 1rem 0;
   align-items: center;
-  max-width: 60%;
+  max-width: 68%;
   margin-inline: auto;
 }
 
@@ -71,6 +71,7 @@ p a {
 }
 
 .itemsbelowNav {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -171,6 +172,7 @@ p.articolo {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card {
@@ -255,6 +257,10 @@ footer {
   width: 60%;
 }
 
+footer p {
+  font-weight: 700;
+}
+
 .footerButtons {
   padding-bottom: 2rem;
   display: flex;
@@ -282,4 +288,127 @@ a {
   gap: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap;
+}
+
+#stickyFooter {
+  top: 66px;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .navFlex {
+    width: 100%;
+    gap: 3rem;
+    max-width: unset;
+    margin-inline: unset;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    padding-left: 2rem;
+  }
+  .belowNav {
+    width: 100%;
+  }
+
+  .itemsbelowNav {
+    padding: 5rem 2rem;
+  }
+  .itemsbelowNav h2 {
+    font-size: 60px;
+  }
+
+  .itemsbelowNav h3 {
+    font-family: 20px;
+  }
+
+  .container {
+    max-width: 90%;
+    padding-bottom: 1rem;
+  }
+
+  .cards {
+    align-items: center;
+  }
+  .card {
+    width: 48%;
+  }
+  .data img {
+    display: none;
+  }
+
+  .asideFooter {
+    flex-direction: column;
+    padding-inline: unset;
+    margin-inline: auto;
+    max-width: 80%;
+  }
+
+  footer {
+    width: 100%;
+    background-color: white;
+  }
+
+  .stickyFooter {
+    background-color: white;
+    z-index: 1000;
+  }
+
+  aside {
+    order: 2;
+    margin-inline: auto;
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .noDisplay {
+    display: none;
+  }
+
+  .navFlex {
+    justify-content: space-around;
+  }
+  .belowNav {
+    max-width: 100%;
+  }
+
+  article {
+    padding: 0 1rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .asideFooter {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  footer,
+  #stickyFooter {
+    position: unset;
+  }
+
+  .logo {
+    width: 15px;
+  }
+
+  .profilo2 {
+    max-width: 45%;
+  }
+  .imgAside {
+    max-width: 45%;
+  }
+  .imgAside img {
+    object-fit: contain;
+    max-width: 100%;
+  }
 }

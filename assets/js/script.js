@@ -20,3 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+let svg = document.querySelector("svg");
+
+let gruppiOpachi = [...svg.querySelectorAll("g[opacity]")];
+
+function cambiaOpacitàCasuale() {
+  let indiceCasuale = Math.floor(Math.random() * gruppiOpachi.length);
+  let gruppoSelezionato = gruppiOpachi[indiceCasuale];
+  let opacitàCorrente = gruppoSelezionato.getAttribute("opacity");
+
+  if (opacitàCorrente == 1) {
+    gruppoSelezionato.setAttribute("opacity", 0);
+  } else {
+    gruppoSelezionato.setAttribute("opacity", 1);
+  }
+}
+
+setInterval(cambiaOpacitàCasuale, 100);
